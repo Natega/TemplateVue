@@ -4,10 +4,21 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
+    {{ janrainUrl }}
     <router-view />
   </div>
 </template>
-
+<script lang="ts">
+import Vue from "vue";
+import config from "./config";
+export default Vue.extend({
+  data() {
+    return {
+      janrainUrl: config.janrainUrl,
+    };
+  },
+});
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
