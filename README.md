@@ -1,4 +1,4 @@
-# widgetssov2
+# template
 
 ## Project setup
 ```
