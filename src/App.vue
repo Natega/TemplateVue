@@ -4,7 +4,12 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
-    {{ janrainUrl }}
+    ENV :{{ janrainUrl }}
+
+    vBootstrap
+    <div class="mb-2">
+      <b-avatar src="https://placekitten.com/300/300" size="6rem"></b-avatar>
+    </div>
     <router-view />
   </div>
 </template>

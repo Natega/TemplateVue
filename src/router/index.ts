@@ -7,8 +7,7 @@ const routes: Array<RouteConfig> = [
   {
     path: "/",
     name: "Home",
-    component: () =>
-      import(/* webpackChunkName: "home" */ "../views/Home.vue")  // lazy load only what you need 
+    component: () => import(/* webpackChunkName: "home" */ "../views/Home.vue") // lazy load only what you need
   },
   {
     path: "/about",
